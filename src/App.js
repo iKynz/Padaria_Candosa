@@ -1,5 +1,6 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import logo from "./components/image/logo.png";
 
 // Pages
 import Home from "./pages/Home/Home"
@@ -14,12 +15,28 @@ function App() {
 
     <div className="App">
 
-      <div className="date_hour">
-        <p>Seg - Dom: 6:00 - 22:00</p>
+      <div className="header_container">
+        <div className="container">
+          <div className="navbar_header">
+          <a href="/">
+          <img src={logo} alt="" className="logo_brand" />
+        </a>
+        <div className="navbar_info">
+          <p>Desde 1991</p>
+          <h1>Candosa</h1>
+        </div>
+          </div>
+
+          <div className="info_box">
+            <p>Phone:<a href="/">21 99999-9999</a></p>
+            <p>Localidade:</p>
+            <p>Estrada do Galeao 999 / Prox aos bombeiros</p>
+          </div> 
+        </div>
       </div>
 
       <BrowserRouter>
-      <Navbar />
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/cardapio" element={<Cardapio />} />
