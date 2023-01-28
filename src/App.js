@@ -2,6 +2,10 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import logo from "./components/image/logo.png";
 
+// icons
+import {FaWhatsapp} from "react-icons/fa";
+import {GoLocation} from "react-icons/go";
+
 // Pages
 import Home from "./pages/Home/Home"
 import Cardapio from "./pages/Cardapio/Cardapio";
@@ -18,20 +22,37 @@ function App() {
       <div className="header_container">
         <div className="container">
           <div className="navbar_header">
-          <a href="/">
-          <img src={logo} alt="" className="logo_brand" />
-        </a>
-        <div className="navbar_info">
-          <p>Desde 1991</p>
-          <h1>Candosa</h1>
-        </div>
+
+            <a href="/">
+              <img src={logo}
+                alt="candosa"
+                className="logo_brand"
+                title="candosa" />
+            </a>
+
+            <div className="navbar_info">
+              <p>Desde 1961</p>
+              <h1>Candosa</h1>
+            </div>
+
           </div>
 
           <div className="info_box">
-            <p>Phone:<a href="/">21 99999-9999</a></p>
-            <p>Localidade:</p>
-            <p>Estrada do Galeao 999 / Prox aos bombeiros</p>
-          </div> 
+            <FaWhatsapp className="icon-phone" />
+            <div className="fa-phone">
+              <p>Phone:</p>
+              <a href="/">21 99999-9999</a>
+            </div>
+
+            <GoLocation className="icon-location" />
+            <div className="fa-map">
+              <p>Local:</p>
+              <address>
+                Estrada do Galeão 999
+              </address>
+            </div>
+
+          </div>
         </div>
       </div>
 

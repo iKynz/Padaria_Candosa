@@ -38,13 +38,15 @@
   }
 }
 
+/* HEADER START */
+
 .logo_brand {
   width: 100px;
   height: 100px;
 }
 
 .header_container {
-  background-color: #913b54;
+  background-color: #ffe0b3;
 }
 
 .header_container h1 {
@@ -76,3 +78,23 @@
   justify-content: center;
   align-items: center;
 }
+
+.fa-phone {
+  padding: 18px 16px 0 27px;
+  border-right: 1px solid #886e36;
+}
+
+.fa-map {
+  padding: 18px 16px 0 27px;
+}
+
+.icon-phone {
+  padding: 18px 16px 0 27px;
+}
+
+.icon-location {
+  padding: 18px 16px 0 27px;
+}
+
+
+/* HEADER END */
