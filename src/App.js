@@ -1,6 +1,6 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import logo from "./components/image/logo.png";
+import logo from "./pages/image/logo.png";
 
 // icons
 import {FaWhatsapp} from "react-icons/fa";
@@ -8,7 +8,9 @@ import {GoLocation} from "react-icons/go";
 
 // Pages
 import Home from "./pages/Home/Home"
-import Cardapio from "./pages/Cardapio/Cardapio";
+import SobreNos from "./pages/SobreNos/SobreNos";
+import Produtos from "./pages/Produtos/Produtos";
+import Contato from "./pages/Contato/Contato"
 
 // Components
 import Navbar from "./components/Navbar/Navbar";
@@ -31,8 +33,8 @@ function App() {
             </a>
 
             <div className="navbar_info">
-              <p>Desde 1961</p>
               <h1>Candosa</h1>
+              <p>Desde 1961</p>
             </div>
 
           </div>
@@ -60,7 +62,9 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/cardapio" element={<Cardapio />} />
+          <Route path="/sobrenos" element={<SobreNos />} />
+          <Route path="/produtos" element={<Produtos />} />
+          <Route path="/contato" element={<Contato />} />
         </Routes>
         <Footer />
       </BrowserRouter>

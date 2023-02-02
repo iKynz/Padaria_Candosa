@@ -1,0 +1,13 @@
+
+.bread {
+    background-image: url(../image/bread.jpg);
+    width: 100vw;
+    height: 68vh;
+}
+
+.bread h2 {
+    color: #fff;
+    padding-top: 20vh;
+    padding-right: 54vw;
+    font-size: 70px;
+}

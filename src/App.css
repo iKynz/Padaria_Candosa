@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 .App {
   text-align: center;
 }
@@ -46,11 +48,12 @@
 }
 
 .header_container {
-  background-color: #ffe0b3;
+  background: -webkit-linear-gradient(to right, #A43931, #1D4350);
+  background: linear-gradient(to right, #A43931, #1D4350);
 }
 
 .header_container h1 {
-  font-family: 'Shalimar', cursive;
+  font-family: 'Pacifico', cursive;
 }
 
 .container {
@@ -67,33 +70,59 @@
 
 .navbar_info {
   margin-left: 20px;
+  color: lightgoldenrodyellow;
 }
 
 .navbar_info h1 {
-  font-size: 50px;
+  font-weight: 500;
+}
+
+.navbar_info p {
+  font-family: 'Pacifico', cursive;
+  margin-top: -9px;
 }
 
 .info_box {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: ghostwhite;
 }
 
 .fa-phone {
   padding: 18px 16px 0 27px;
   border-right: 1px solid #886e36;
+  margin-left: -20px;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.fa-phone a {
+  text-decoration: none;
+  color: ghostwhite;
+  transition: 0.9s;
+}
+
+.fa-phone a:hover {
+  color: #000;
 }
 
 .fa-map {
   padding: 18px 16px 0 27px;
+  margin-left: -17px;
+  font-size: 19px;
+  font-weight: 600;
 }
 
 .icon-phone {
   padding: 18px 16px 0 27px;
+  font-size: 30px;
 }
 
 .icon-location {
-  padding: 18px 16px 0 27px;
+  padding: 18px 0 0 27px;
+  margin-left: -11px;
+  font-size: 30px;
 }
 
 
